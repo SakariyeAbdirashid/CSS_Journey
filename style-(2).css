@@ -1,0 +1,54 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-chekbox{
+    position: absolute;
+    left: -999px;
+    opacity: 0;
+}
+
+.custom-chekbox + label{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.custom-chekbox + label::before{
+    content: '';
+    width: 1.1em;
+    height: 1.1em;
+    border: .05px solid black;
+    border-radius: .3em;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.custom-chekbox + label:hover::before{
+    background-color: #069;
+}
+
+.custom-chekbox:checked + label:focus{
+    box-shadow:  0 0 20px 0 black;
+
+}
+
+.custom-chekbox:checked + label::before{
+    content: '\2714';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.custom-chekbox:disabled + label::before{
+    background-color: #777;
+}
+
+.custom-chekbox:disabled + label:hover::before{
+    cursor: not-allowed;
+    background-color: #ccc;
+    border-color: #999;
+}

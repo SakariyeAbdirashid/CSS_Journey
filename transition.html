@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btn{
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: none;
+            background-color: hsl(200,100%,50%);
+            color: white;
+            padding: .5em 1em;
+            border-radius: .3em;
+            margin: 1rem;
+        }
+        .hide{
+            text-transform: capitalize;
+            opacity: .7;
+            transition: opacity  500ms;
+        }
+        
+        .hide:hover{
+            opacity: 1;
+
+        }
+        .hide:focus{
+            opacity: 0;
+        }
+
+        .color{
+            text-transform: capitalize;
+            transition: background-color ,color  500ms linear;
+        }
+
+        .color:focus{
+            color: #333;
+            background-color: hsl(20,100%,50%);
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <button class="btn hide" type="submit">click me to hide</button>
+    <button class="btn  color" type="submit">click me to change color</button>
+    
+
+
+</body>
+</html>

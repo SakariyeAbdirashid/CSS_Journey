@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        .div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            color: white;
+
+            animation: change-color 1s linear 500ms infinite alternate;   
+            animation: change-size 1s linear 500ms infinite alternate;   
+        }
+        .div:hover{
+            
+            animation-play-state: paused;
+        }
+
+        @keyframes change-color{
+            100%{
+             color: black;
+            }
+        }
+
+        @keyframes change-size{
+            100%{
+                width: 200px;
+                height: 200px;
+                background-color: greenyellow;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="div">Div</div>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+    <div>div</div>
+
+</body>
+</html>

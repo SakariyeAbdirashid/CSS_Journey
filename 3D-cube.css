@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    perspective: 400px;
+}
+
+.container{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+
+
+.cube{
+    --size:100px;
+
+    height: var(--size);
+    width: var(--size);
+
+    position: absolute;
+    background-color: hsla(200,100%,50%,.5);
+    text-transform: capitalize;
+
+    border: 1px solid hsla(200,100%,10%,.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.right{
+    transform: rotatY(90deg) translateZ(35px);
+}
+
+.front{
+    transform: rotateY(-90deg) translateZ(35px);
+}
+
+

@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: cambria;
+    color: #1b2521;
+}
+
+.header{
+    min-height:100vh ;
+    background-image:url('images/background.jpg') ;
+    background-size: cover;
+    background-position-x:30% ;
+    background-position-y:center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+img{
+    width: 50px;    
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #012;
+    width: 100vw;
+    color: white;
+    padding: .5rem 1rem;
+}
+
+.nav ul{
+    display: flex;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+}
+.nav ul li{
+    padding: .5rem;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    margin-left: 1rem;
+    color: inherit;
+}
+.nav ul li a:hover{
+    color: #ccc;
+}
+
+
+
+.title{
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+.sub-title{
+    font-size: 1.5rem;
+    margin-top: .3rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.learn{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: hsl(200,100%,50%);
+    padding: .5em 1em;
+    font-size: 1.1rem;
+    border-radius: 1000px;
+}
+
+.learn:hover,
+.learn:focus{
+    background-color: hsl(200,100%,40%);
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 1rem;
+    width: 30px;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    color: white;
+    left: 50%;
+}
+
+.curricilum-title{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+
+
+.section{
+    padding: 2rem;
+}
+
+
+
+
+
+.grid-container img{
+    width: 60px;
+    margin-right: 1rem;
+}
+.grid-container{
+
+    display: grid;
+    grid-template-columns: repeat(2,minmax(auto,450px));
+    justify-content: center;
+    row-gap:20px;
+    column-gap: 50px;
+
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.section-card{
+    background-color: #0AF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.card-pricing{
+    background-color:#dcf4ff;
+    border: 1px solid black;
+    border-radius: .3em;
+    padding: 1rem;
+    margin:  1rem 0;
+
+}
+
+.card-pricing.accent{
+    background-color:white;
+    margin: 0;
+}
+
+.card-pricing:first-child{
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-right: none;
+}
+
+.card-pricing:last-child{
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    border-left: none;
+}
+
+.price-header{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.plan-name{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+
+}
+.plan-price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.plan-price::after{
+    content: '/mo';
+    font-size: .75rem;
+    color: grey;
+}
+
+.feature{
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+
+.feature.inactive{
+    color: grey;
+    text-decoration: line-through;
+
+}
+
+.feature:last-child{
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px){
+
+    .header{
+        background-position-x:65%;
+        background-position-y:center;
+        
+    }
+
+    .grid-container{
+        grid-template-columns: minmax(auto,450px);
+        row-gap: 30px;
+    }
+
+
+    .card-container{
+        flex-wrap: wrap;
+    }
+
+    .card-pricing,
+    .card-pricing.accent{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+}
+    .card-pricing:first-child,
+    .card-pricing:last-child{
+        border-radius: .3rem;
+        border-right: 1px solid black ;
+        border-left: 1px solid black ;
+    }
+     .card-pricing:last-child{
+        margin-bottom: 0;
+     }
+
+     .feature{
+        text-align: center;
+     }
+
+     .feature.inactive{
+        display: none;
+     }
+
+
+   
+}

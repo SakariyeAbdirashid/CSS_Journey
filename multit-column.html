@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi-column-layout</title>
+    <style>
+        *{
+    box-sizing: border-box;
+}
+
+.parent{
+    height: 100vh;
+    column-width: 150px;
+    column-count: 3;
+    column-rule:20px solid black ;
+    column-gap:40px ;   
+     column-fill: auto;
+}
+
+h2{
+    column-span: all;
+}
+    </style>
+</head>
+<body>
+    
+<div class="parent">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit soluta esse enim nostrum rem minima incidunt tempore excepturi ratione!
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, voluptatum?
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reprehenderit!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ad necessitatibus, officia eos iusto commodi odio numquam tenetur magnam quae?
+    <h2>header</h2>
+   <hr>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ab eaque, sequi voluptatum, quos quia iusto, deserunt aut impedit error nostrum saepe totam laboriosam tempora explicabo libero magnam sapiente neque?
+   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, debitis! Quae assumenda error iusto aliquid!
+
+
+</div>
+
+</body>
+</html>

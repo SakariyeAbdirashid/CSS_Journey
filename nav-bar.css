@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: #302c2c;
+    display: flex;
+    padding: 0 .5rem;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.nav span{
+    text-transform: capitalize;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav ul li{
+    padding: .5rem;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.nav ul li:hover{
+    background-color: #777;
+    border-radius: .3em;
+    box-shadow:  -2px 0 5px 1px hsla(0,0%,50%,.5);
+}

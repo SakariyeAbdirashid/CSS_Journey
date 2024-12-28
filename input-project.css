@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.input{
+    cursor: pointer;
+    outline: none;
+    margin-top: .5rem;
+    border: 1px solid hsl(0,0%,50%);
+    padding:.5rem 1rem;
+    color: black;
+    border-radius: .3em;
+}
+
+.success{
+    border-color: hsl(100,70%,50%);
+}
+
+.success:hover,.success:focus{
+    border-color: hsl(100,70%,50%);
+    box-shadow:  0 0 5px 1px hsl(100,70%,70%);
+}
+
+.error{
+    border-color: hsl(0,100%,50%);
+
+}
+.error:hover, 
+.error:focus{
+    border-color: hsl(0,100%,50%);
+    box-shadow: hsl(0,100%,30%);
+}
+
+.large{
+    border-color: hsl(267, 100%, 50%);
+}
+
+
+.large:hover,.large:focus{
+    border-color: hsl(267,100%,50%);
+    box-shadow:  0 0 5px 1px hsl(267,100%,30%);
+}
+
+

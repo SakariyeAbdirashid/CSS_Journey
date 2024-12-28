@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #777;
+
+}
+
+
+.container{
+    background-color: white;  
+    border-radius: .3em;  
+    /* width: 900px; */
+    max-width: 80%;
+    min-height: 80vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid black;
+    padding-bottom: .5rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.x{
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bold;
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    
+   
+
+}
+
+.text{
+    flex-grow: 1;
+    overflow:auto;
+    padding: 1rem;
+    
+}
+
+
+.bottoms{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    padding: .5rem;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: .3em;
+    padding: .5rem 1rem;
+    color:white;
+    margin: .5rem;
+}
+
+.green{
+    background-color: hsl(170,80%,40%);
+    
+}
+
+.green:hover{
+    background-color: hsl(171,100%,30%);
+    box-shadow:  0 0 5px 1px hsl(171,100%,30%);
+}
+
+.danger{
+    background-color: hsl(0,100%,60%);
+}
+
+.danger:hover{
+    background-color: hsl(0,100%,40%);
+    box-shadow:  0 0 5px 1px hsl(0,100%,50%);
+}

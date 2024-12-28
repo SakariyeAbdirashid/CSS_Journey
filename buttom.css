@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+.btn{
+    background-color: hsl(0,0%,90%);
+    border: 1px solid hsl(0,0%,70%);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: .7em 1.2em;
+    border-radius: .3em;
+}
+
+.btn:hover,.btn:focus{
+    background-color: hsl(0,0%,80%);
+    box-shadow:  0 0 5px 1px hsl(0,0%,70%);
+}
+
+.primary{
+    background-color: hsl(271,70%,50%);
+    color: white;
+    border-color:hsl(271,70%,30%) ;
+}
+
+.primary:hover,.primary:focus{
+    background-color: hsl(271,70%,40%);
+    box-shadow:  0 0 5px 1px hsl(0,0%,30%);
+}
+
+
+.Accent{
+    background-color: hsl(200,100%,40%);
+    color: white;
+    border-color: hsl(200,100%,30%); 
+}
+
+.Accent:hover,.Accent:focus{
+    background-color:hsl(200,70%,40%);
+    box-shadow:  0 0 5px 1px hsl(200,100%,20%);
+}
+
